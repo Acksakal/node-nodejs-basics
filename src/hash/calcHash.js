@@ -6,6 +6,7 @@ import { Writable } from 'node:stream';
 const calculateHash = async () => {
   const hash = createHash('sha256');
   
+  // [SELF-REVIEW] Why using Writable? 
   const writable = new Writable({
     write(chunk, _, callback) {
       hash.update(chunk); 

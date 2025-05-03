@@ -14,6 +14,7 @@ const remove = async () => {
   }
 
   try {
+    // [SELF-REVIEW] consider using fs:rm which is more powerful and flexible
     await unlink(filePath);
     console.log(`${filePath} deleted successfully`);
   } catch (error) {

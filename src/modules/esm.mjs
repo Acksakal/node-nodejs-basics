@@ -1,6 +1,7 @@
-import path from 'path';
-import { release, version } from 'os';
-import { createServer as createServerHttp } from 'http';
+// [SELF-REVIEW] add 'node:' prefix to imports. https://github.com/import-js/eslint-plugin-import/issues/2717
+import path from 'node:path';
+import { release, version } from 'node:os';
+import { createServer as createServerHttp } from 'node:http';
 import './files/c.cjs'
 
 const random = Math.random();
