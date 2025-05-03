@@ -19,3 +19,9 @@ const create = async () => {
 };
 
 await create();
+
+/**
+ * [SELF-REVIEW] Common notes:
+ * 1. Use constants outside of the main function unless you derive args from that function
+ * 2. Consider creating an error-factory file and export it wherever required
+ */
